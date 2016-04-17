@@ -39,50 +39,40 @@
       <!--Хлебные крошки-->
       <div class="breadcrumbs">
         <ul>
-          <li>
-            <a href="#">Главная</a>
-          </li>
-          <li>
-            <a href="#">Магазин</a>
-          </li>
-          <li>
-            <a href="#">Средства для ухода</a>
-          </li>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Магазин</a></li>
+          <li><a href="#">Средства для ухода</a></li>
         </ul>
       </div>
       <!--Блок производителей и товаров-->
-      <div class="content">
+      <div class="filter">
         <div class="makers"><!--Блок производителей-->
           <h2>Производители:</h2>
-          <form action="#" method="post"><!--В action не знаю что ставить-->
+          <form action="https://echo.htmlacademy.ru" method="post">
             <ul>
               <li>
-                <label>
-                  <input type="checkbox" name="baxter" checked>baxter of california
-                </label>
-              </li>
-              <label>
-                <input type="checkbox" name="mr-natty">mr natty
-              </label>
-              <li>
-              </li>
-              <label>
-                <input type="checkbox" name="suavecito" checked>suavecito
-              </label>
-              <li>
-                <label>
-                  <input type="checkbox" name="malin">malin+goetz
-                </label>
+                <input id="baxter-id" type="checkbox" name="baxter" checked>
+                <label for="baxter-id">baxter of california</label>
               </li>
               <li>
-                <label>
-                  <input type="checkbox" name="murray">murray's
-                </label>
+                <input id="mr-natty-id" type="checkbox" name="mr-natty">
+                <label for="mr-natty-id">mr natty</label>
               </li>
               <li>
-                <label>
-                  <input type="checkbox" name="crew" checked>american crew
-                </label>
+                <input id="suavecito-id" type="checkbox" name="suavecito" checked>
+                <label for="suavecito-id">suavecito</label>
+              </li>
+              <li>
+                <input id="malin-id" type="checkbox" name="malin">
+                <label for="malin-id">malin+goetz</label>
+              </li>
+              <li>
+                <input id="murray-id" type="checkbox" name="murray">
+                <label for="murray-id">murray's</label>
+              </li>
+              <li>
+                <input id="crew-id" type="checkbox" name="crew" checked>
+                <label for="crew-id">american crew</label>
               </li>
             </ul>
           </form>
@@ -93,19 +83,16 @@
           <form action="#" method="post"><!--В action не знаю что ставить-->
             <ul>
               <li>
-                <label>
-                  <input type="radio" name="group-radio" value="shaving-things">Бритвенные принадлежности
-                </label>
+                <input id="shaving-things-id" type="radio" name="group-radio" value="shaving-things">
+                <label for="shaving-things-id">Бритвенные принадлежности</label>
               </li>
               <li>
-                <label>
-                  <input type="radio" name="group-radio" value="face-products">Средства для ухода
-                </label>
+                <input id="face-products-id" type="radio" name="group-radio" value="face-products">
+                <label for="face-product-id">Средства для ухода</label>
               </li>
               <li>
-                <label>
-                  <input type="radio" name="group-radio" value="accessories">Аксессуары
-                </label>
+                <input id="accessories-id" type="radio" name="group-radio" value="accessories">
+                <label for="accessories-id">Аксессуары</label>
               </li>
             </ul>
           </form>
@@ -115,76 +102,88 @@
       <!--Блок с карточками товаров-->
       <div class="goods">
         <article class="good-card">
-          <img src="#photo" width="286" height="164" alt="">
-          <p>2900 руб.</p>
-          <a class="btn" href="#">Купить</a>
-        </article>
-        <article class="good-card">
-          <img src="#photo" width="286" height="164" alt="">
-          <p>750 руб.</p>
-          <a class="btn" href="#">Купить</a>
-        </article>
-        <article class="good-card">
-          <img src="#photo" width="286" height="164" alt="">
-          <p>290 руб.</p>
-          <a class="btn" href="#">Купить</a>
-        </article>
-        <article class="good-card">
-          <img src="#photo" width="286" height="164" alt="">
-          <p>500 руб.</p>
-          <a class="btn" href="#">Купить</a>
-        </article>
-        <article class="good-card">
-          <img src="#photo" width="286" height="164" alt="">
-          <p>300 руб.</p>
-          <a class="btn" href="#">Купить</a>
-        </article>
-        <article class="good-card">
-          <img src="#photo" width="286" height="164" alt="">
-          <p>3900 руб.</p>
-          <a class="btn" href="#">Купить</a>
-        </article>
-        </div>
-        <!--Блок с навигацией по страницам-->
-        <div class="navigator">
-          <ul>
-            <li>
-              <a class="btn" href="#">1</a>
-            </li>
-            <li>
-              <a class="btn" href="#">2</a>
-            </li>
-            <li>
-              <a class="btn" href="#">3</a>
-            </li>
-            <li>
-              <a class="btn" href="#">4</a>
-            </li>
-          </ul>
-        </div>
-        <!--Футер-->
-        <footer class="main-footer">
-          <div class="container">
-            <div class="footer-contacts">
-              <p>
-                Барбершоп "Бородинский"<br>
-                Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 18/8<br>
-                <a href="#">Как нас найти?</a><br>
-                Телефон: +7(812) 666-02-66
-              </p>
-            </div>
-            <div class="footer-social">
-              <p>Давайте дружить!</p>
-              <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-              <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-              <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-            </div>
-            <div class="footer-copyright">
-              <p>Разработано:</p>
-              <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-            </div>
+          <a href=""><img src="http://placehold.it/150x100" width="150" height="100" alt="Картинка"></a>
+          <div class="price-button">
+            <p>2900 руб.</p>
+            <a class="btn" href="#">Купить</a>
           </div>
-        </footer>
+        </article>
+        <article class="good-card">
+          <a href=""><img src="http://placehold.it/150x100" width="150" height="100" alt="Картинка"></a>
+          <div class="price-button">
+            <p>750 руб.</p>
+            <a class="btn" href="#">Купить</a>
+          </div>
+        </article>
+        <article class="good-card">
+          <a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Картинка"></a>
+          <div class="price-button">
+            <p>290 руб.</p>
+            <a class="btn" href="#">Купить</a>
+          </div>
+        </article>
+        <article class="good-card">
+          <a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Картинка"></a>
+          <div class="price-button">
+            <p>500 руб.</p>
+            <a class="btn" href="#">Купить</a>
+          </div>
+        </article>
+        <article class="good-card">
+          <a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Картинка"></a>
+          <div class="price-button">
+            <p>300 руб.</p>
+            <a class="btn" href="#">Купить</a>
+          </div>
+        </article>
+        <article class="good-card">
+          <a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Картинка"></a>
+          <div class="price-button">
+            <p>3900 руб.</p>
+            <a class="btn" href="#">Купить</a>
+          </div>
+        </article>
+      </div>
+        <!--Блок с навигацией по страницам-->
+      <div class="paginator">
+        <ul>
+          <li>
+            <a class="btn" href="#">1</a>
+          </li>
+          <li>
+            <a class="btn" href="#">2</a>
+          </li>
+          <li>
+            <a class="btn" href="#">3</a>
+          </li>
+          <li>
+            <a class="btn" href="#">4</a>
+          </li>
+        </ul>
+      </div>
     </main>
+    <!--Футер-->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-contacts">
+          <p>
+            Барбершоп "Бородинский"<br>
+            Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 18/8<br>
+            <a href="#">Как нас найти?</a><br>
+            Телефон: +7(812) 666-02-66
+          </p>
+        </div>
+        <div class="footer-social">
+          <p>Давайте дружить!</p>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </div>
+        <div class="footer-copyright">
+          <p>Разработано:</p>
+          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
