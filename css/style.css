@@ -1,0 +1,10 @@
+body {
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  font-family: "PTSans NarrowBold", "Arial", sans-serif;
+}
+h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
