@@ -1,10 +1,178 @@
+html,
 body {
-  font-size: 14px;
-  line-height: 24px;
-  color: #000000;
-  font-family: "PTSans NarrowBold", "Arial", sans-serif;
+  min-width: 1122px;
+  min-height: 1750px;
+  margin: 0;
+  padding: 0;
 }
-h2 {
-  font-size: 30px;
-  line-height: 42px;
+
+body {
+/*  background: #000000 url("../img/barbershop-index-grid.jpg") no-repeat 50% 3px;
+  background-size: auto;*/
+}
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.container {
+  outline: 1px solid #000000;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-header {
+  margin-bottom: 60px;
+}
+
+.main-navigation {
+  float: left;
+  width: 780px;
+
+  /* Только для оформления сетки */
+  min-height: 70px;
+}
+
+.user-block {
+  float: right;
+  width: 140px;
+
+  /* Только для оформления сетки */
+  min-height: 70px;
+}
+
+.index-logo {
+  width: 368px;
+  height: 204px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px;
+}
+
+.features {
+  margin-bottom: 80px;
+}
+
+.features-item {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+
+  /* Только для оформления сетки */
+  min-height: 175px;
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+.index-content {
+  margin-bottom: 35px;
+  padding: 50px 80px;
+}
+
+.index-content-left {
+  float: left;
+  width: 380px;
+
+  /* Только для оформления сетки */
+  min-height: 330px;
+}
+
+.index-content-right {
+  float: left;
+  width: 380px;
+  /* Только для оформления сетки */
+  min-height: 330px;
+}
+
+.main-footer {
+  margin-top: 65px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.footer-contacts {
+  float: left;
+  width: 320px;
+  margin-right: 60px;
+
+  /* Только для оформления сетки */
+  min-height: 90px;
+}
+
+.footer-social {
+  float: left;
+  width: 180px;
+
+  /* Только для оформления сетки */
+  min-height: 90px;
+}
+
+.footer-copyright {
+  float: right;
+  width: 180px;
+
+  /* Только для оформления сетки */
+  min-height: 90px;
+}
+/*Файл catalog.html*/
+.breadcrumbs {
+  margin-bottom: 25px
+  margin-right: auto;
+  outline: 1px solid #000000;
+}
+
+.filter {
+    float: left;
+    width: 220px;
+    margin-right: 20px;
+    outline: 1px solid #000000;
+}
+
+.goods {
+  float: left;
+  width: 700px;
+  outline: 1px solid #000000;
+  margin-bottom: 20px;
+}
+
+.good-card {
+  display: inline-block;
+  width: 220px;
+  height: 290px;
+  margin-left: 10px;
+}
+
+.paginator {
+  clear: both;
+  outline: 1px solid #000000;
+}
+/*Файл catalog-item.html*/
+.gallery {
+  float: left;
+  width: 550px;
+  outline: 1px solid #000000;
+}
+
+.description-batching {
+  float: left;
+  width: 300px;
+  margin-left: 40px;
+  outline: 1px solid #000000;
+}
+.photo-controls {
+  outline: 1px solid #000000;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.photo-controls li{
+  display: inline-block;
+  outline: 1px solid #000000;
 }
